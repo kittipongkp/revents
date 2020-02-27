@@ -1,16 +1,22 @@
-import React, { Component, Fragment } from 'react'
-import EventListItem from './EventListItem'
+import React, { Component, Fragment } from 'react';
+import EventListItem from './EventListItem';
 
 class EventList extends Component {
-    render() {
-        return (
-            <Fragment>
-                {this.props.events.map(event => (
-                     <EventListItem event={event} key={event.id}/>
-                ))}
-            </Fragment>
-        )
-    }
+  render() {
+    const { events, selectEvent, deleteEvent } = this.props;
+    return (
+      <Fragment>
+        {events.map(event => (
+          <EventListItem
+            event={event}
+            key={event.id}
+            selectEvent={selectEvent}
+            deleteEvent={deleteEvent}
+          />
+        ))}
+      </Fragment>
+    );
+  }
 }
 
-export default EventList
+export default EventList;
