@@ -8,7 +8,7 @@ class NavBar extends Component {
                   <Container>
                     <Menu.Item header>
                       <img src="assets/logo.png" alt="logo" />
-                      Re-vents
+                      Re--vents
                     </Menu.Item>
                     <Menu.Item name="Events" />
                     <Menu.Item>
