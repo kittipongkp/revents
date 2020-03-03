@@ -3,13 +3,14 @@ import { Container } from 'semantic-ui-react';
 import EventDashboard from '../../features/event/EventDashboard/EventDashboard';
 import NarBar from '../../NavBar/NavBar';
 import { Route } from 'react-router';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import HomePage from '../../features/home/HomePage';
 import EventDetailedPage from '../../features/event/EventDetailed/EventDetailPage';
 import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard';
 import SettingsDashboard from '../../features/user/Settings/SettingsDashboard';
 import UserDetailedPage from '../../features/user/UserDetailed/UserDetailedPage';
 import EventForm from '../../features/event/EventForm/EventForm';
+import TestComponent from '../../features/testarea/TestComponent'
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
                 <Route path='/profile/:id' component={UserDetailedPage} />
                 <Route path='/settings' component={SettingsDashboard} />
                 <Route path='/createEvent' component={EventForm} />
+                <Route path='/test' component={TestComponent} />
               </Container>
             </Fragment>
           )}
